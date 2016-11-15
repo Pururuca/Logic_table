@@ -5,7 +5,7 @@ Seja um colaborador!
 
 
 
-
+``
 Programa para criar tabela verdade.
 
 +------------------+---------+    
@@ -115,7 +115,7 @@ a1 + (b1*a2) + (a1+!a2*!b1*b3)
    0    1    1    1    =1    
    1    1    1    1    =1  
 
-
+``
 
 O que Falta Fazer?
 
