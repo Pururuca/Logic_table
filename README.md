@@ -27,17 +27,17 @@ Uso:
 1) Expressão dentro do programa
 -------------------------------
 ./plogica
-
+<pre>
 digite a expressão:
 a * b
-
+</pre>
 
 Saída:
 --------
+<pre>
 expressão:
 a * b
 
-<pre>
 +---+---+-------+ 
 | a | b | SAIDA |
 +---+---+-------+
@@ -58,9 +58,10 @@ a * b
 <pre>
 digite a expressão:
 a + b
-
+</pre>
 Saída:
 ----------
+<pre>
 expressão:
 a + b
 
@@ -77,9 +78,10 @@ a + b
 <pre>
 digite a expressão:
 a1 & a2 
-
+</pre>
 Saída: 
 ---------
+</pre>
 expressão:
 a1 & a2
 
@@ -109,6 +111,7 @@ digite a expressão:
 Selecionar  todas as entradas que resultem saídas  1:
 ------------------------------------------------------
 ./plogica -mc | grep '=1'
+
 SAÍDA
 -------
 <pre>
