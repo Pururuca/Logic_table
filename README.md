@@ -1,8 +1,10 @@
 Pururuca tabela verdade:
+========================
 
 Precisamos de colaboradores! 
+----------------------------
 Seja um colaborador! 
-
+---------------------
 
 
 
@@ -19,9 +21,10 @@ Programa para criar tabela verdade.
 |	NEG        |    !    | 
 
 
-Ex:
 
-1)
+Uso:
+-----
+1) Expressão  
 ./plogica
 digite a expressão:
 a * b
@@ -117,5 +120,7 @@ O que Falta Fazer?
 -------------------
 
 1- colocar cada função em um arquivo separado
+
 2- Substituir variaveis globais por locais
+
 3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade)
