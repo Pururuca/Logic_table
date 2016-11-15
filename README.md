@@ -16,6 +16,7 @@ Programa para criar tabela verdade.
 |	OR         |    |    | 
 |	OR         |    ||   | 
 |	NEG        |    !    | 
+|------------------|---------| 
 
 Ex:
 
