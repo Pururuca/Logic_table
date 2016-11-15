@@ -6,8 +6,10 @@ Seja um colaborador!
 
 
 
-Programa para criar tabela verdade. 
+Programa para criar tabela verdade.
+ 
 +------------------+---------+
+
 |Operações lógicas | operador|
 +------------------+---------+
 |	AND        |    +    | 
@@ -115,3 +117,10 @@ a1 + (b1*a2) + (a1+!a2*!b1*b3)
    0    1    1    1    =1    
    1    1    1    1    =1  
 
+
+
+O que Falta Fazer?
+
+1- colocar cada função em um arquivo separado
+2- Substituir variaveis globais por locais
+3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade)
