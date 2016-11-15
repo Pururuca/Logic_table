@@ -26,7 +26,7 @@ Uso:
 ====
 1) Expressão dentro do programa
 -------------------------------
-**$ ./plogica**
+**2$ ./plogica**
 <pre>
 digite a expressão:
 a * b
@@ -73,8 +73,9 @@ a + b
   1   1     1 
 </pre>
 3) Saída limpa com resultado marcado(=)
----------------------------------------
-**$ ./plogica -mc **
+----------------------------------------
+**$ ./plogica -mc**
+
 <pre>
 digite a expressão:
 a1 & a2 
