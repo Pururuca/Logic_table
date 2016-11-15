@@ -109,7 +109,7 @@ Selecionar  todas as entradas que resultem saídas  1:
 ------------------------------------------------------
 **$ ./plogica -mc | grep '=1'**
 
-**SAÍDA**
+**Saída**
 <pre>
 digite a expressão:
 a1 + (b1*a2) + (a1+!a2*!b1*b3)          
