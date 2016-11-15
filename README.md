@@ -7,9 +7,8 @@ Seja um colaborador!
 
 
 Programa para criar tabela verdade.
- 
-+------------------+---------+
 
++------------------+---------+
 |Operações lógicas | operador|
 +------------------+---------+
 |	AND        |    +    | 
