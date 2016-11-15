@@ -14,8 +14,8 @@ Programa para criar tabela verdade.
 |	AND        |    &    |     
 |	AND        |    &&   | 
 |	OR         |    +    | 
-|	OR         |    |    | 
-|	OR         |    ||   | 
+|	OR         |    \|   | 
+|	OR         |    \|\| | 
 |	NEG        |    !    | 
 
 
