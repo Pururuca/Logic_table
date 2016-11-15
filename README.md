@@ -9,6 +9,7 @@ Seja um colaborador!
 Programa para criar tabela verdade.
 
 |Operações lógicas | operador|
+|------------------|---------| 
 |	AND        |    +    |     
 |	AND        |    &    |     
 |	AND        |    &&   | 
@@ -16,7 +17,7 @@ Programa para criar tabela verdade.
 |	OR         |    |    | 
 |	OR         |    ||   | 
 |	NEG        |    !    | 
-|------------------|---------| 
+
 
 Ex:
 
