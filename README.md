@@ -26,7 +26,7 @@ Uso:
 ====
 1) Expressão no programa
 -------------------------------
-**2$ ./plogica**
+**$ ./plogica**
 <pre>
 digite a expressão:
 a * b
@@ -126,7 +126,27 @@ a1 + (b1*a2) + (a1+!a2*!b1*b3)
    1    1    1    1    =1  
 </pre>
 
+**PS:** Toda constante será considerada **1** se maior que **0** 
+<pre>
+digite a expressão:
+a && 1 || b * 0
+expressão:
+a && 1 || b * 0
 
+
++---+---+-------+
+| a | b | SAIDA |
++---+---+-------+
+| 0 | 0 |   0   |
++---+---+-------+
+| 1 | 0 |   1   |
++---+---+-------+
+| 0 | 1 |   0   |
++---+---+-------+
+| 1 | 1 |   1   |
++---+---+-------+
+
+</pre>
 O que Falta Fazer?
 -------------------
 
@@ -135,3 +155,5 @@ O que Falta Fazer?
 2- Substituir variaveis globais por locais
 
 3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade no programa)
+
+4- Make de gente grande
