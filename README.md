@@ -23,14 +23,17 @@ Programa para criar tabela verdade.
 
 
 Uso:
------
-1) Expressão  
+====
+1) Expressão dentro do programa
+-------------------------------
 ./plogica
+
 digite a expressão:
 a * b
 
 
 Saída:
+--------
 expressão:
 a * b
 
@@ -49,13 +52,15 @@ a * b
 
 </pre>
 
-2)
+2) Saída limpa
+---------------
 ./plogica -c
 <pre>
 digite a expressão:
 a + b
 
 Saída:
+----------
 expressão:
 a + b
 
@@ -66,13 +71,15 @@ a + b
   0   1     1 
   1   1     1 
 </pre>
-3)
+3) Saída limpa com resultado marcado(=)
+---------------------------------------
  ./plogica -mc
 <pre>
 digite a expressão:
 a1 & a2 
 
 Saída: 
+---------
 expressão:
 a1 & a2
 
@@ -84,11 +91,13 @@ a1 & a2
    1    1    =1    
 </pre>
 Casos práticos de uso(UNIX-LIKE): 
-
+==================================
 Selecionar todas as entradas que resultem saída 0:
+------------------------------------------------------
 echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'
 
 SAÍDA:
+-------
 <pre>
 digite a expressão:
    0    0    0    0    =0    
@@ -98,7 +107,10 @@ digite a expressão:
    0    0    1    1    =0 
 </pre>
 Selecionar  todas as entradas que resultem saídas  1:
+------------------------------------------------------
 ./plogica -mc | grep '=1'
+SAÍDA
+-------
 <pre>
 digite a expressão:
 a1 + (b1*a2) + (a1+!a2*!b1*b3)          
