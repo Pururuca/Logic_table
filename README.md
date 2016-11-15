@@ -24,7 +24,7 @@ Programa para criar tabela verdade.
 
 Uso:
 ====
-1) Expressão dentro do programa
+1) Expressão no programa
 -------------------------------
 **2$ ./plogica**
 <pre>
@@ -92,7 +92,7 @@ a1 & a2
 </pre>
 Casos práticos de uso(UNIX-LIKE): 
 ==================================
-Selecionar todas as entradas que resultem saída 0:
+Selecionar todas as entradas que resultem saída 0 (expressão fora do programa):
 ------------------------------------------------------
 **$ echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'**
 
