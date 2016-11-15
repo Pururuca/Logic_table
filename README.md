@@ -12,7 +12,7 @@ Programa para criar tabela verdade.
 
 |Operações lógicas | operador|
 |------------------|---------| 
-|	AND        |    +    |     
+|	AND        |    *    |     
 |	AND        |    &    |     
 |	AND        |    &&   | 
 |	OR         |    +    | 
