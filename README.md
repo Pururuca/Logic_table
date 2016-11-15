@@ -32,8 +32,7 @@ digite a expressão:
 a * b
 </pre>
 
-Saída:
---------
+**Saída:**
 <pre>
 expressão:
 a * b
@@ -59,8 +58,7 @@ a * b
 digite a expressão:
 a + b
 </pre>
-Saída:
-----------
+**Saída:**
 <pre>
 expressão:
 a + b
@@ -80,8 +78,7 @@ a + b
 digite a expressão:
 a1 & a2 
 </pre>
-Saída: 
----------
+**Saída:**
 <pre>
 expressão:
 a1 & a2
@@ -99,8 +96,7 @@ Selecionar todas as entradas que resultem saída 0:
 ------------------------------------------------------
 **$ echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'**
 
-SAÍDA:
--------
+**Saída:**
 <pre>
 digite a expressão:
    0    0    0    0    =0    
@@ -113,8 +109,7 @@ Selecionar  todas as entradas que resultem saídas  1:
 ------------------------------------------------------
 **$ ./plogica -mc | grep '=1'**
 
-SAÍDA
--------
+**SAÍDA**
 <pre>
 digite a expressão:
 a1 + (b1*a2) + (a1+!a2*!b1*b3)          
@@ -139,4 +134,4 @@ O que Falta Fazer?
 
 2- Substituir variaveis globais por locais
 
-3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade)
+3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade no programa)
