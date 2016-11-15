@@ -45,9 +45,10 @@ a * b
 +---+---+-------+
 
 </pre>
-----------
+
 2)
 ./plogica -c
+<pre>
 digite a expressão:
 a + b
 
@@ -61,9 +62,10 @@ a + b
   1   0     1
   0   1     1 
   1   1     1 
-
+</pre>
 3)
  ./plogica -mc
+<pre>
 digite a expressão:
 a1 & a2 
 
@@ -77,24 +79,24 @@ a1 & a2
    1    0    =0    
    0    1    =0    
    1    1    =1    
-
+</pre>
 Casos práticos de uso(UNIX-LIKE): 
 
 Selecionar todas as entradas que resultem saída 0:
 echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'
 
 SAÍDA:
-
+<pre>
 digite a expressão:
    0    0    0    0    =0    
    0    1    0    0    =0 
    0    0    1    0    =0    
    0    1    0    1    =0    
    0    0    1    1    =0 
-
+</pre>
 Selecionar  todas as entradas que resultem saídas  1:
 ./plogica -mc | grep '=1'
-
+<pre>
 digite a expressão:
 a1 + (b1*a2) + (a1+!a2*!b1*b3)          
    1    0    0    0    =1    
@@ -108,10 +110,11 @@ a1 + (b1*a2) + (a1+!a2*!b1*b3)
    1    0    1    1    =1    
    0    1    1    1    =1    
    1    1    1    1    =1  
-
+</pre>
 
 
 O que Falta Fazer?
+-------------------
 
 1- colocar cada função em um arquivo separado
 2- Substituir variaveis globais por locais
