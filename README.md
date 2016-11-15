@@ -167,3 +167,5 @@ O que Falta Fazer?
 3- melhorar regras do scanner para caracteres inválidos (que não tem utilidade no programa)
 
 4- Make de gente grande
+
+5- alocação dinamica de variaveis
