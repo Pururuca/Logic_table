@@ -26,7 +26,7 @@ Uso:
 ====
 1) Expressão dentro do programa
 -------------------------------
-./plogica
+**$ ./plogica**
 <pre>
 digite a expressão:
 a * b
@@ -54,7 +54,7 @@ a * b
 
 2) Saída limpa
 ---------------
-./plogica -c
+**$ ./plogica -c**
 <pre>
 digite a expressão:
 a + b
@@ -74,14 +74,14 @@ a + b
 </pre>
 3) Saída limpa com resultado marcado(=)
 ---------------------------------------
- ./plogica -mc
+**$ ./plogica -mc **
 <pre>
 digite a expressão:
 a1 & a2 
 </pre>
 Saída: 
 ---------
-</pre>
+<pre>
 expressão:
 a1 & a2
 
@@ -96,7 +96,7 @@ Casos práticos de uso(UNIX-LIKE):
 ==================================
 Selecionar todas as entradas que resultem saída 0:
 ------------------------------------------------------
-echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'
+**$ echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep '=0'**
 
 SAÍDA:
 -------
@@ -110,7 +110,7 @@ digite a expressão:
 </pre>
 Selecionar  todas as entradas que resultem saídas  1:
 ------------------------------------------------------
-./plogica -mc | grep '=1'
+**$ ./plogica -mc | grep '=1'**
 
 SAÍDA
 -------
