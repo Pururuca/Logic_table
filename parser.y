@@ -26,8 +26,8 @@ calculation:
 ;
 
 line: T_NEWLINE
-    | expression T_NEWLINE { RES =  $1;return 0; } 
     | T_QUIT T_NEWLINE { printf("fim da transmissão!\n"); exit(0); }
+    | expression T_NEWLINE { RES =  $1;return 0; } 
 ;
 
 

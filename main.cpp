@@ -11,6 +11,7 @@ extern char *T[100];
 extern int ReV[100];
 extern int RES;
 extern bool tab;
+
 bool marca = false;
 
 
@@ -99,13 +100,10 @@ int cic = 0;
 for(j=0;j<100;j++)
 	ReV[j]=0;
 var = 0;
-  char input[200];
- fprintf(stderr,"digite a expressão:\n");
+char input[200];
+fprintf(stderr,"digite a expressão:\n");
  
-fgets(input,sizeof(input),stdin);
-printf("expressão:\n");
-printf("%s",input);
-std::cout << "\n\n";
+while(fgets(input,sizeof(input),stdin)!=NULL){
 
 do{
 
@@ -120,12 +118,21 @@ for( j =0 ; j < var; j++){
   yylex_init(&scanner); 
   yy_scan_string(input,scanner);
   yyparse(scanner);
-	  PRINT(cic);
+  if(var == 0)
+	exit(0);
+  if(cic==0){
+  printf("\n\nexpressão:\n");
+  printf("%s",input);
+  std::cout << "\n";
+  }
+  PRINT(cic);
   yyrestart(stdin,scanner);
   cic++;
   yylex_destroy(scanner);
 }while(cic <= pow(2,var)-1);
-printf("\n");
 
+cic = 0;
+var = 0;
+}
   return 0;
 }

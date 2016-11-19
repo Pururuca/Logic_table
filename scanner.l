@@ -12,7 +12,6 @@ int var;
 char *T[100];
 int ReV[100];
 bool tab = true;
-char * strr;
 
 int RepVar(char *str,int t){
 int i;
@@ -44,8 +43,9 @@ return ReV[cont];
 
 %}
 %%
+"saida"|"exit"|"quit"|"sair"		{return T_QUIT;}	
 ([a-zA-Z]|[a-zA-Z][a-zA-Z0-9]+) {  *yylval = RepVar(strdup(yytext),yyleng);  return T_INT;}
- 
+\n					{return T_NEWLINE;}
 [ \t]	; // ignore all whitespace<INITIAL>
 [0-9]+ 					{ *yylval = atoi(yytext); return T_INT;}
 "*"|"&&"|"&"	{return T_AND;}
@@ -53,6 +53,6 @@ return ReV[cont];
 "("					{return T_LEFT;}
 ")"					{return T_RIGHT;}
 "!"					{return T_NEG;}
-\n					{return T_NEWLINE;}
+. ;
 
 %%
