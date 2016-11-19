@@ -97,14 +97,14 @@ int main(int argc, char *argv[]) {
 
 int j=0;
 int cic = 0;
-for(j=0;j<100;j++)
-	ReV[j]=0;
+
 var = 0;
 char input[200];
 fprintf(stderr,"digite a expressão:\n");
  
 while(fgets(input,sizeof(input),stdin)!=NULL){
-
+for(j=0;j<100;j++)
+	ReV[j]=0;
 do{
 
 std::string binary = std::bitset<100>(cic).to_string(); 
