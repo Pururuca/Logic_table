@@ -24,9 +24,9 @@ for( i = 0; i < var ; i++  )
 
 
 if(repetido){
-T[var]=(char*)malloc((t+1)*sizeof(char));
-memcpy(T[var],str,(t+1)*sizeof(char));
-var++;
+	T[var]=(char*)malloc((t+1)*sizeof(char));
+	memcpy(T[var],str,(t+1)*sizeof(char));
+	var++;
 }
 
 int bit;
