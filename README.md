@@ -160,7 +160,7 @@ a && 1 || b * 0
 O que Falta Fazer?
 -------------------
 
-1- colocar cada função em um arquivo separado
+1- colocar as funções de display em um arquivo separado
 
 2- Substituir variaveis globais por locais
 
