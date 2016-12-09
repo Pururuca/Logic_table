@@ -94,13 +94,13 @@ Casos práticos de uso(UNIX-LIKE):
 ==================================
 Selecionar todas as entradas que resultem saída 0 (expressão fora do programa):
 ------------------------------------------------------
-**$ echo "a1 + (b1*a2) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep -v '=1'**
+**$ echo "a1 + ( b1 * a2 ) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep -v '=1'**
 
 **Saída:**
 <pre>
 digite a expressão:
 expressão:
-a1 + (b1*a2) + (a1 + !a2 * !b1 * b3)
+a1 + ( b1 * a2 ) + (a1 + !a2 * !b1 * b3)
 
 
   a1   b1   a2   b3   SAIDA  
@@ -112,7 +112,7 @@ a1 + (b1*a2) + (a1 + !a2 * !b1 * b3)
 </pre>
 Selecionar  todas as entradas que resultem saídas  1:
 ------------------------------------------------------
-**$ ./plogica -mc | grep -v '=0'**
+**$ echo "a1 + ( b1 * a2 ) + (a1 + \!a2 * \!b1 * b3)" | ./plogica -mc | grep -v '=0'**
 
 **Saída**
 <pre>
